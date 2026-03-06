@@ -1,0 +1,47 @@
+---
+const prerender = true;
+import Layout from '@/layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
+import GalleryGrid from '@/components/GalleryGrid.astro';
+import Cart from '@/components/react/Cart';
+---
+
+<Layout title="Inicio" description="Galería Virtual de Arte Contemporáneo de Francesc Chimelis">
+  
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="absolute inset-0 perspective-grid opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-surface-dark via-transparent to-surface-dark"></div>
+  </div>
+
+  <main class="relative z-10">
+    <Hero />
+
+    <!-- GallerySection -->
+    <section id="gallery" class="py-32 content-auto">
+      <div class="container-wide">
+        <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+          <h2 class="font-heading text-3xl md:text-5xl text-white uppercase leading-none">
+            La <span class="text-accent">Galería</span>
+          </h2>
+          <a href="/gallery" class="text-xs font-bold uppercase tracking-widest text-accent hover:text-white transition-colors border-b border-accent pb-1">
+            Ver colección completa
+          </a>
+        </div>
+        
+        <GalleryGrid />
+      </div>
+    </section>
+
+    <!-- Placeholder Sections -->
+    <section class="py-32 bg-stone-900/50">
+      <div class="container-narrow text-center">
+        <h2 class="font-heading text-2xl text-white uppercase mb-8">El Concepto</h2>
+        <p class="text-muted-foreground leading-relaxed">
+          Explorando la frontera entre lo tangible y lo onírico a través de una técnica que desafía la percepción espacial y la narrativa surrealista.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Cart client:load />
+</Layout>

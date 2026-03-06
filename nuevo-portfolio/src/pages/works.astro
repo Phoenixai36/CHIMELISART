@@ -1,0 +1,58 @@
+---
+export const prerender = true;
+import Layout from '@/layouts/Layout.astro';
+import { t } from '@/stores/language';
+
+const books = [
+  { 
+    title: { es: 'La Sombra del Farero', en: 'The Lighthouse Keeper Shadow' },
+    year: '2023',
+    genre: { es: 'Novela', en: 'Novel' },
+    desc: { es: 'Una exploración narrativa sobre el aislamiento y la memoria en las costas mediterráneas.', en: 'A narrative exploration of isolation and memory on the Mediterranean coasts.' }
+  },
+  { 
+    title: { es: 'Versos Deshabitados', en: 'Uninhabited Verses' },
+    year: '2021',
+    genre: { es: 'Poesía', en: 'Poetry' },
+    desc: { es: 'Recopilación de poemas escritos durante el periodo de introspección surrealista.', en: 'Collection of poems written during the period of surrealist introspection.' }
+  }
+];
+---
+
+<Layout title="Escritos" description="Obra literaria y ensayos de Francesc Chimelis">
+  <main class="pt-40 pb-32">
+    <div class="container-narrow">
+      <div class="mb-24 text-center animate-slide-up">
+        <h1 class="font-heading text-4xl md:text-6xl text-white uppercase tracking-tighter mb-6">
+          {t('nav.writings')}
+        </h1>
+        <div class="w-20 h-px bg-accent mx-auto"></div>
+      </div>
+
+      <div class="space-y-32">
+        {books.map((book, index) => (
+          <div class={`flex flex-col md:flex-row gap-16 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} animate-fade-in`}>
+            <div class="w-full md:w-1/2 aspect-[3/4] bg-surface-dark border border-white/5 flex items-center justify-center p-12 relative group overflow-hidden">
+               <div class="absolute inset-0 perspective-grid opacity-10 group-hover:opacity-20 transition-opacity"></div>
+               <div class="text-center relative z-10">
+                 <h3 class="font-heading text-xl text-white uppercase mb-4">{book.title.es}</h3>
+                 <p class="text-accent text-[10px] font-bold tracking-widest">{book.year}</p>
+               </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 space-y-6">
+              <span class="text-[10px] text-accent font-bold uppercase tracking-[0.4em]">{book.genre.es}</span>
+              <h3 class="font-heading text-2xl text-white uppercase tracking-wider">{book.title.es}</h3>
+              <p class="text-muted-foreground font-body text-sm leading-relaxed">
+                {book.desc.es}
+              </p>
+              <button class="text-[10px] font-bold uppercase tracking-widest text-white border-b border-white pb-1 hover:text-accent hover:border-accent transition-all">
+                Saber más
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>

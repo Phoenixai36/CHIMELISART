@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import heroBg from '@/assets/hero-bg.png';
+import { t } from '@/stores/language';
+---
+
+<section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <Image 
+      src={heroBg} 
+      alt="Chimelis Art Background" 
+      class="w-full h-full object-cover opacity-40 scale-105"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-surface-dark via-surface-dark/60 to-surface-dark"></div>
+    <div class="absolute inset-0 perspective-grid opacity-20"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="container-narrow relative z-10 text-center">
+    <div class="animate-fade-in" style="animation-delay: 200ms;">
+      <span class="inline-block text-accent font-heading text-xs md:text-sm tracking-[0.5em] uppercase mb-6 border-b border-accent/30 pb-2">
+        Barcelona • {t('hero.virtualGallery')}
+      </span>
+    </div>
+
+    <h1 class="font-heading text-5xl md:text-7xl lg:text-9xl text-white uppercase tracking-tighter leading-none mb-8 animate-slide-up">
+      CHIMELIS<span class="text-accent">ART</span>
+    </h1>
+
+    <div class="animate-fade-in" style="animation-delay: 600ms;">
+      <h2 class="text-muted-foreground font-body text-sm md:text-lg tracking-[0.3em] uppercase mb-12">
+        {t('hero.subheader')}
+      </h2>
+      
+      <p class="max-w-xl mx-auto text-muted-foreground/80 leading-relaxed font-body text-sm md:text-base mb-12">
+        {t('hero.description')}
+      </p>
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a 
+          href="/gallery" 
+          class="px-8 py-4 bg-accent text-surface-dark font-bold uppercase tracking-widest text-xs rounded-none hover:bg-white transition-all transform hover:-translate-y-1"
+        >
+          {t('nav.gallery')}
+        </a>
+        <a 
+          href="/tienda" 
+          class="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-none hover:bg-white hover:text-surface-dark transition-all"
+        >
+          {t('nav.acquire')}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10 opacity-50">
+    <div class="w-px h-16 bg-gradient-to-b from-accent to-transparent"></div>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+export const prerender = true;
+import Layout from '@/layouts/Layout.astro';
+import ProductCard from '@/components/react/ProductCard';
+import { GALLERY } from '@/data/artworks';
+import prices from '@/data/prices.json';
+import { t } from '@/stores/language';
+---
+
+<Layout title="Tienda" description="Adquiere obra original y reproducciones de Francesc Chimelis">
+  <main class="pt-40 pb-32 min-h-screen">
+    <div class="container-wide">
+      <div class="mb-20 text-center animate-slide-up">
+        <h1 class="font-heading text-4xl md:text-6xl text-white uppercase tracking-tighter mb-6">
+          La <span class="text-accent">Tienda</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-muted-foreground font-body text-sm md:text-base leading-relaxed uppercase tracking-widest">
+          Selección de obras originales disponibles para adquisición directa. Cada pieza incluye certificado de autenticidad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {GALLERY.filter(art => art.status === 'available').map((artwork) => (
+          <ProductCard 
+            client:load 
+            artwork={artwork} 
+            priceData={{ amount: prices.original.price }} 
+          />
+        ))}
+      </div>
+
+      <!-- Information Sections -->
+      <div class="mt-40 grid grid-cols-1 md:grid-cols-3 gap-16 border-t border-white/5 pt-20">
+        <div class="space-y-6">
+          <h3 class="font-heading text-xs text-white uppercase tracking-[0.4em]">Autenticidad</h3>
+          <p class="text-[12px] text-muted-foreground leading-relaxed font-body">
+            Todas las obras originales se entregan con un Certificado de Autenticidad firmado por Francesc Chimelis, garantizando la exclusividad de la pieza.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <h3 class="font-heading text-xs text-white uppercase tracking-[0.4em]">Envíos</h3>
+          <p class="text-[12px] text-muted-foreground leading-relaxed font-body">
+            Gestión profesional de transporte nacional e internacional con seguro incluido. La obra se embala siguiendo estándares de conservación museística.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <h3 class="font-heading text-xs text-white uppercase tracking-[0.4em]">Consultas</h3>
+          <p class="text-[12px] text-muted-foreground leading-relaxed font-body">
+            ¿Buscas una pieza específica o un encargo personalizado? Contacta directamente para una asesoría sobre coleccionismo y disponibilidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,19 @@
+{
+    "id": "asimetria",
+    "title": {
+        "es": "Asimetría",
+        "en": "Asymmetry"
+    },
+    "technique": {
+        "es": "Técnica Mixta",
+        "en": "Mixed Media"
+    },
+    "image": "https://static.wixstatic.com/media/0ec507_024b89e37803487083a2def90977207c~mv2.png",
+    "year": "2023",
+    "dimensions": "100x120cm",
+    "status": "available",
+    "description": {
+        "es": "Una obra que explora la ruptura de la simetría visual...",
+        "en": "A work exploring the breakdown of visual symmetry..."
+    }
+}

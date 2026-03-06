@@ -1,0 +1,71 @@
+---
+export const prerender = true;
+import Layout from '@/layouts/Layout.astro';
+import { t } from '@/stores/language';
+import { Image } from 'astro:assets';
+// Placeholder for artist image
+import heroBg from '@/assets/hero-bg.png'; 
+---
+
+<Layout title="El Artista" description="Biografía y trayectoria de Francesc Chimelis">
+  <main class="pt-40 pb-32">
+    <div class="container-wide">
+      <div class="flex flex-col lg:flex-row gap-20 items-start">
+        <!-- Sticky Sidebar with Image -->
+        <div class="w-full lg:w-1/3 lg:sticky lg:top-40">
+           <div class="relative group">
+              <div class="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                <Image src={heroBg} alt="Francesc Chimelis" class="w-full h-full object-cover" />
+              </div>
+              <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent opacity-20 -z-10 animate-pulse"></div>
+              <div class="mt-8">
+                <h2 class="font-heading text-2xl text-white uppercase tracking-tighter">Francesc <span class="text-accent">Chimelis</span></h2>
+                <p class="text-xs text-muted-foreground uppercase tracking-[0.3em] font-body mt-2">Barcelona, 1956</p>
+              </div>
+           </div>
+        </div>
+
+        <!-- Main Bio -->
+        <div class="w-full lg:w-2/3 space-y-20">
+          <section class="space-y-8 animate-fade-in">
+            <h1 class="font-heading text-xs text-accent uppercase tracking-[0.5em]">{t('nav.about')}</h1>
+            <p class="text-2xl md:text-4xl text-white font-heading uppercase leading-tight tracking-tighter">
+              {t('features.description')}
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12">
+              <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm uppercase tracking-widest">Pintura</h4>
+                <p class="text-muted-foreground text-sm leading-relaxed font-body">
+                  Desarrolla una técnica mixta única donde la superposición de planos y el uso simbólico del color crean atmósferas que evocan el subconsciente y la arquitectura de los sueños.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm uppercase tracking-widest">Escena & Letras</h4>
+                <p class="text-muted-foreground text-sm leading-relaxed font-body">
+                  Su experiencia como actor y director teatral impregna sus lienzos de una cualidad escenográfica, mientras que su producción literaria complementa su universo visual.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Timeline Stub -->
+          <section class="space-y-12 animate-fade-in" style="animation-delay: 200ms;">
+             <h3 class="font-heading text-xs text-accent uppercase tracking-[0.5em]">Hitos Clave</h3>
+             <div class="space-y-8">
+               {[
+                 { year: '2023', event: 'Publicación de "La Sombra del Farero"' },
+                 { year: '2019', event: 'Muestra Antológica: 40 años de trayectoria' },
+                 { year: '1982', event: 'Primera exposición individual en Barcelona' }
+               ].map(item => (
+                 <div class="flex gap-8 group">
+                   <span class="text-accent font-bold text-sm tracking-widest group-hover:translate-x-2 transition-transform">{item.year} —</span>
+                   <p class="text-muted-foreground text-sm uppercase tracking-wider font-body group-hover:text-white transition-colors">{item.event}</p>
+                 </div>
+               ))}
+             </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

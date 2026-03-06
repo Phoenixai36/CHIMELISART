@@ -1,0 +1,75 @@
+---
+export const prerender = false; // Admin needs to be dynamic
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Admin | Chimelis Art" description="Panel de gestión de obras y precios">
+  <main class="pt-40 pb-32 min-h-screen">
+    <div class="container-wide">
+      <div class="mb-12">
+        <h1 class="font-heading text-4xl text-white uppercase tracking-tighter">Panel de <span class="text-accent">Control</span></h1>
+        <p class="text-muted-foreground text-sm uppercase tracking-widest mt-2">Gestión de Inventario y Precios</p>
+      </div>
+
+      <div class="bg-surface-dark border border-white/5 rounded-lg overflow-hidden">
+        <table class="w-full text-left font-body text-sm">
+          <thead class="bg-white/5 text-accent uppercase tracking-widest text-[10px] font-bold">
+            <tr>
+              <th class="p-6">Obra</th>
+              <th class="p-6">Estado</th>
+              <th class="p-6">Precio</th>
+              <th class="p-6">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body" class="divide-y divide-white/5">
+            {/* Populated via script */}
+            <tr id="loading-row">
+              <td colspan="4" class="p-10 text-center text-muted-foreground italic">Cargando inventario...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    async function loadArtworks() {
+      const tbody = document.getElementById('admin-table-body');
+      try {
+        const res = await fetch('/api/artworks');
+        const data = await res.json();
+        
+        if (tbody) {
+          tbody.innerHTML = data.map(art => `
+            <tr class="hover:bg-white/5 transition-colors group">
+              <td class="p-6">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 bg-stone-800 rounded"></div>
+                  <div>
+                    <p class="text-white font-bold uppercase tracking-wider">${art.title_es}</p>
+                    <p class="text-[10px] text-muted-foreground">ID: ${art.id}</p>
+                  </div>
+                </div>
+              </td>
+              <td class="p-6">
+                <span class="px-2 py-1 ${art.status === 'available' ? 'bg-green-500/10 text-green-400' : 'bg-red-500/10 text-red-400'} text-[9px] font-bold uppercase rounded">
+                  ${art.status}
+                </span>
+              </td>
+              <td class="p-6">
+                <input type="number" value="${art.price}" class="bg-stone-900 border border-white/10 text-white px-3 py-1 w-24 rounded focus:border-accent outline-none" />
+              </td>
+              <td class="p-6 text-right">
+                <button class="text-accent hover:text-white transition-colors text-[10px] font-bold uppercase tracking-widest">Guardar</button>
+              </td>
+            </tr>
+          `).join('');
+        }
+      } catch (err) {
+        if (tbody) tbody.innerHTML = '<tr><td colspan="4" class="p-10 text-center text-red-400">Error al cargar datos.</td></tr>';
+      }
+    }
+
+    loadArtworks();
+  </script>
+</Layout>

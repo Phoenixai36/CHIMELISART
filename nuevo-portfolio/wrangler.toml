@@ -1,0 +1,7 @@
+name = "nuevo-portfolio"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chimelisart-db"
+database_id = "d794ce2e-d679-47fe-88ad-5529611078dd"

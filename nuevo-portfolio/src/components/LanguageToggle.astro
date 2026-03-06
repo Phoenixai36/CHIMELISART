@@ -1,0 +1,61 @@
+---
+/**
+ * LanguageToggle component
+ * Uses vanilla JS to interact with the Nanostore on the client side.
+ */
+import { $language } from '@/stores/language';
+const currentLang = $language.get();
+---
+
+<div class="flex items-center gap-3">
+  <button 
+    id="lang-toggle-es"
+    class={`text-[10px] font-bold tracking-widest transition-colors ${currentLang === 'es' ? 'text-accent' : 'text-muted-foreground hover:text-white'}`}
+  >
+    ES
+  </button>
+  <span class="text-white/10 text-[10px]">|</span>
+  <button 
+    id="lang-toggle-en"
+    class={`text-[10px] font-bold tracking-widest transition-colors ${currentLang === 'en' ? 'text-accent' : 'text-muted-foreground hover:text-white'}`}
+  >
+    EN
+  </button>
+</div>
+
+<script>
+  import { setLanguage, $language } from '@/stores/language';
+
+  const btnEs = document.getElementById('lang-toggle-es');
+  const btnEn = document.getElementById('lang-toggle-en');
+
+  const updateUI = (lang: string) => {
+    if (lang === 'es') {
+      btnEs?.classList.add('text-accent');
+      btnEs?.classList.remove('text-muted-foreground');
+      btnEn?.classList.remove('text-accent');
+      btnEn?.classList.add('text-muted-foreground');
+    } else {
+      btnEn?.classList.add('text-accent');
+      btnEn?.classList.remove('text-muted-foreground');
+      btnEs?.classList.remove('text-accent');
+      btnEs?.classList.add('text-muted-foreground');
+    }
+  };
+
+  btnEs?.addEventListener('click', () => {
+    setLanguage('es');
+    updateUI('es');
+    // In a real app, you might reload or trigger a re-render
+    window.location.reload(); 
+  });
+
+  btnEn?.addEventListener('click', () => {
+    setLanguage('en');
+    updateUI('en');
+    window.location.reload();
+  });
+
+  // Init UI from store
+  updateUI($language.get());
+</script>

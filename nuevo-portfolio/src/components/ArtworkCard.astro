@@ -1,0 +1,64 @@
+---
+/**
+ * ArtworkCard component
+ */
+import { Image } from 'astro:assets';
+import type { Artwork } from '@/data/artworks';
+import { useStore } from '@nanostores/react'; // Note: Not usable in server-side Astro frontmatter directly for reactivity
+import { translations } from '@/data/translations';
+import { $language } from '@/stores/language';
+
+interface Props {
+  artwork: Artwork;
+}
+
+const { artwork } = Astro.props;
+const lang = $language.get();
+const t = translations[lang] || translations.es;
+---
+
+<div class="group relative overflow-hidden bg-surface-dark border border-white/5 transition-all hover:-translate-y-2 duration-700">
+  <div class="aspect-[4/5] overflow-hidden relative">
+    <Image 
+      src={artwork.image} 
+      alt={artwork.title[lang]}
+      width={800}
+      height={1000}
+      class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+      loading="lazy"
+    />
+    
+    <!-- Hover Overlay -->
+    <div class="absolute inset-0 bg-surface-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-8 text-center">
+      <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        <p class="text-white text-xs font-body leading-relaxed mb-6 opacity-0 group-hover:opacity-100 delay-100 transition-opacity">
+          {artwork.description[lang].substring(0, 150)}...
+        </p>
+        <span class="px-6 py-3 border border-accent text-accent text-[10px] uppercase font-bold tracking-widest hover:bg-accent hover:text-surface-dark transition-all duration-300">
+          {t.cursor}
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="p-6 relative">
+    <div class="flex items-start justify-between mb-2">
+      <h3 class="font-heading text-lg text-white uppercase tracking-wider">{artwork.title[lang]}</h3>
+      <span class="text-[10px] text-accent font-bold">{artwork.year}</span>
+    </div>
+    
+    <p class="text-[10px] text-muted-foreground font-body uppercase tracking-[0.2em] mb-4">
+      {artwork.technique[lang]}
+    </p>
+
+    <div class="flex items-center justify-between pt-4 border-t border-white/5">
+      <span class="text-[10px] text-muted-foreground uppercase tracking-widest">{artwork.dimensions}</span>
+      <span class={`text-[9px] px-2 py-0.5 rounded-sm uppercase font-bold tracking-tighter ${
+        artwork.status === 'available' ? 'bg-green-500/10 text-green-400' : 
+        artwork.status === 'reserved' ? 'bg-amber-500/10 text-amber-400' : 'bg-red-500/10 text-red-400'
+      }`}>
+        {t.gallery.filters[artwork.status]}
+      </span>
+    </div>
+  </div>
+</div>

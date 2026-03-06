@@ -1,0 +1,21 @@
+---
+/**
+ * GalleryGrid component
+ */
+import ArtworkCard from './ArtworkCard.astro';
+import { GALLERY } from '@/data/artworks';
+
+interface Props {
+  limit?: number;
+}
+
+const { limit } = Astro.props;
+const artworks = limit ? GALLERY.slice(0, limit) : GALLERY;
+---
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+  {artworks.map((artwork, index) => (
+    <div class="animate-fade-in" style={`animation-delay: ${index * 100}ms`}>
+      <ArtworkCard artwork={artwork} />
+    </div>
+  ))}
+</div>

@@ -1,0 +1,40 @@
+{
+    "original": {
+        "small": {
+            "price": 2500,
+            "label": "Pequeño (hasta 60x40cm)"
+        },
+        "medium": {
+            "price": 4500,
+            "label": "Mediano (hasta 115x90cm)"
+        },
+        "large": {
+            "price": 7500,
+            "label": "Grande (más de 115x90cm)"
+        }
+    },
+    "print": {
+        "small": {
+            "price": 150,
+            "label": "Print A4 (30x21cm)"
+        },
+        "medium": {
+            "price": 250,
+            "label": "Print A3 (42x30cm)"
+        },
+        "large": {
+            "price": 450,
+            "label": "Print A2 (60x42cm)"
+        }
+    },
+    "digital": {
+        "standard": {
+            "price": 50,
+            "label": "Digital HD (3000x4000px)"
+        },
+        "premium": {
+            "price": 150,
+            "label": "Digital Ultra HD (6000x8000px)"
+        }
+    }
+}
