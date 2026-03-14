@@ -1,0 +1,36 @@
+# =============================================================================
+# PROJECT EXODIA — .aider.conf.yml
+# Aider configurado para Wave Terminal + tmux + Minimax M1
+# =============================================================================
+
+# ── Modelo principal ──────────────────────────────────────────────────────────
+model: minimax/MiniMax-M2.5
+
+# ── Comportamiento de edición ─────────────────────────────────────────────────
+auto-commits: false
+dirty-commits: false
+attribute-author: false
+attribute-committer: false
+edit-format: diff
+
+# ── Output y UX ───────────────────────────────────────────────────────────────
+pretty: true
+stream: true
+fancy-input: true
+show-model-warnings: false
+
+# ── Git ───────────────────────────────────────────────────────────────────────
+git: true
+gitignore: true
+
+# ── Cache de prompts ──────────────────────────────────────────────────────────
+cache-prompts: true
+cache-keepalive-pings: "5"
+
+# ── Archivos a ignorar ────────────────────────────────────────────────────────
+read:
+  - .aider.system.md
+
+# ── System prompt inline ──────────────────────────────────────────────────────
+verify-ssl: true
+voice-language: es
