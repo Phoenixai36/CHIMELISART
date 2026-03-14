@@ -1,7 +1,7 @@
 {
   "repo": "CHIMELISART",
-  "exported_at": "2026-03-10T02:19:05.083713",
-  "count": 30,
+  "exported_at": "2026-03-14T09:21:28.718660",
+  "count": 33,
   "papers": [
     {
       "id": "https://openalex.org/W2969625533",
@@ -17,8 +17,8 @@
       ],
       "year": 2019,
       "venue": "International Journal of Information Management",
-      "abstract": null,
-      "cited_by_count": 3748,
+      "abstract": "As far back as the industrial revolution, significant development in technical innovation has succeeded transforming numerous manual tasks and processes that had been existence for decades where humans reached limits of physical capacity. Artificial Intelligence (AI) offers this same transformative potential augmentation replacement human activities within a wide range industrial, intellectual social applications. The pace change new AI technological age is staggering, with breakthroughs algorithmic machine learning autonomous decision-making, engendering opportunities continued innovation. impact could be significant, industries ranging from: finance, healthcare, manufacturing, retail, supply chain, logistics utilities, all potentially disrupted by onset technologies. study brings together collective insight from number leading expert contributors to highlight opportunities, realistic assessment impact, challenges research agenda posed rapid emergence domains: business management, government, public sector, science technology. This timely technology its on future industry society general, whilst recognising societal influence direction development.",
+      "cited_by_count": 3758,
       "is_oa": true,
       "url": "https://openalex.org/W2969625533",
       "pdf_url": "https://www.sciencedirect.com/science/article/pii/S026840121930917X",
@@ -34,7 +34,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.234513",
-      "updated_at": "2026-03-10T02:19:05.019135"
+      "updated_at": "2026-03-14T09:21:28.657586"
     },
     {
       "id": "https://openalex.org/W3088283486",
@@ -49,7 +49,7 @@
       "year": 2020,
       "venue": "Journal of Management Studies",
       "abstract": "Abstract In this article we provide a systematic review of the extensive yet diverse and fragmented literature on digital transformation (DT), with goal clarifying boundary conditions to investigate phenomenon from perspective organizational change. On basis 279 articles, multi‐dimensional framework synthesizing what is known about DT discern two important thematical patterns: moving firms malleable designs that enable continuous adaptation, move embedded in driven by business ecosystems. From these patterns, derive four perspectives DT: technology impact, compartmentalized systemic shift holistic co‐evolution. Linking our findings interpretations existing work, find nature only partially covered conventional frameworks analysis, research agenda managerial implications for strategy",
-      "cited_by_count": 2012,
+      "cited_by_count": 2015,
       "is_oa": true,
       "url": "https://openalex.org/W3088283486",
       "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joms.12639",
@@ -65,7 +65,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.236750",
-      "updated_at": "2026-03-10T02:19:05.023166"
+      "updated_at": "2026-03-14T09:21:28.660378"
     },
     {
       "id": "https://openalex.org/W2972006294",
@@ -98,7 +98,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.238409",
-      "updated_at": "2026-03-10T02:19:05.024834"
+      "updated_at": "2026-03-14T09:21:28.662324"
     },
     {
       "id": "https://openalex.org/W4210916416",
@@ -115,7 +115,7 @@
       "year": 2022,
       "venue": "OPUS 4 (Zuse Institute Berlin)",
       "abstract": "Climate change is one of the greatest challenges facing humanity, and we, as machine learning experts, may wonder how we can help. Here describe be a powerful tool in reducing greenhouse gas emissions helping society adapt to changing climate. From smart grids disaster management, identify high impact problems where existing gaps filled by learning, collaboration with other fields. Our recommendations encompass exciting research questions well promising business opportunities. We call on community join global effort against climate change.",
-      "cited_by_count": 771,
+      "cited_by_count": 773,
       "is_oa": false,
       "url": "https://openalex.org/W4210916416",
       "pdf_url": null,
@@ -131,7 +131,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.239837",
-      "updated_at": "2026-03-10T02:19:05.027189"
+      "updated_at": "2026-03-14T09:21:28.664318"
     },
     {
       "id": "https://openalex.org/W2979040987",
@@ -148,7 +148,7 @@
       "year": 2019,
       "venue": "IEEE Access",
       "abstract": "The era of artificial neural network (ANN) began with a simplified application in many fields and remarkable success pattern recognition (PR) even manufacturing industries. Although significant progress achieved surveyed addressing ANN to PR challenges, nevertheless, some problems are yet be resolved like whimsical orientation (the unknown path that cannot accurately calculated due its directional position). Other problem includes; object classification, location, scaling, neurons behavior analysis hidden layers, rule, template matching. Also, the lack extant literature on issues associated seems slow down research focus field. Hence, there is need for state-of-the-art networks urgently address above-highlights more successes. study furnishes readers clearer understanding current, new trend models effectively addresses challenges enable topics. Similarly, comprehensive review reveals diverse areas their PR. In evaluating performance models, statistical indicators measuring model studies were adopted. Such as use mean absolute percentage error (MAPE), (MAE), root squared (RMSE), variance (VAPE). result shows current such GAN, SAE, DBN, RBM, RNN, RBFN, PNN, CNN, SLP, MLP, MLNN, Reservoir computing, Transformer performing excellently tasks. Therefore, recommends development concurrently successes",
-      "cited_by_count": 694,
+      "cited_by_count": 695,
       "is_oa": true,
       "url": "https://openalex.org/W2979040987",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8600701/08859190.pdf",
@@ -164,7 +164,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.242075",
-      "updated_at": "2026-03-10T02:19:05.029525"
+      "updated_at": "2026-03-14T09:21:28.666175"
     },
     {
       "id": "https://openalex.org/W4383913712",
@@ -181,7 +181,7 @@
       "year": 2023,
       "venue": "Human Resource Management Journal",
       "abstract": "Abstract ChatGPT and its variants that use generative artificial intelligence (AI) models have rapidly become a focal point in academic media discussions about their potential benefits drawbacks across various sectors of the economy, democracy, society, environment. It remains unclear whether these technologies result job displacement or creation, if they merely shift human labour by generating new, potentially trivial practically irrelevant, information decisions. According to CEO ChatGPT, impact this new family AI technology could be as big “the printing press”, with significant implications for employment, stakeholder relationships, business models, research, full consequences are largely undiscovered uncertain. The introduction more advanced potent tools market, following launch has ramped up “AI arms race”, creating continuing uncertainty workers, expanding applications, while heightening risks related well‐being, bias, misinformation, context insensitivity, privacy issues, ethical dilemmas, security. Given developments, perspectives editorial offers collection research pathways extend HRM scholarship realm AI. In doing so, discussion synthesizes literature on AI, connecting it aspects processes, practices, outcomes, thereby contributing shaping future research.",
-      "cited_by_count": 683,
+      "cited_by_count": 685,
       "is_oa": true,
       "url": "https://openalex.org/W4383913712",
       "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1748-8583.12524",
@@ -197,7 +197,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.244073",
-      "updated_at": "2026-03-10T02:19:05.032273"
+      "updated_at": "2026-03-14T09:21:28.668303"
     },
     {
       "id": "https://openalex.org/W2943528199",
@@ -230,7 +230,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.253075",
-      "updated_at": "2026-03-10T02:19:05.034387"
+      "updated_at": "2026-03-14T09:21:28.670217"
     },
     {
       "id": "https://openalex.org/W4394828356",
@@ -247,7 +247,7 @@
       "year": 2024,
       "venue": "IEEE Access",
       "abstract": "The Generative Pre-trained Transformer (GPT) represents a notable breakthrough in the domain of natural language processing, which is propelling us toward development machines that can understand and communicate using manner closely resembles humans. GPT based on transformer architecture, deep neural network designed for processing tasks. Due to their impressive performance tasks ability effectively converse, have gained significant popularity among researchers industrial communities, making them one most widely used effective models related fields, motivated conduct this review. This review provides detailed overview GPT, including its working process, training procedures, enabling technologies, impact various applications. In review, we also explored potential challenges limitations GPT. Furthermore, discuss solutions future directions. Overall, paper aims provide comprehensive understanding applications, emerging challenges, solutions.",
-      "cited_by_count": 468,
+      "cited_by_count": 473,
       "is_oa": true,
       "url": "https://openalex.org/W4394828356",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10500411.pdf",
@@ -263,7 +263,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.255424",
-      "updated_at": "2026-03-10T02:19:05.036654"
+      "updated_at": "2026-03-14T09:21:28.672095"
     },
     {
       "id": "https://openalex.org/W4306292106",
@@ -280,7 +280,7 @@
       "year": 2022,
       "venue": "Artificial Intelligence Review",
       "abstract": null,
-      "cited_by_count": 445,
+      "cited_by_count": 447,
       "is_oa": true,
       "url": "https://openalex.org/W4306292106",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-022-10286-2.pdf",
@@ -296,7 +296,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.257972",
-      "updated_at": "2026-03-10T02:19:05.038762"
+      "updated_at": "2026-03-14T09:21:28.674206"
     },
     {
       "id": "https://openalex.org/W4385737488",
@@ -311,8 +311,8 @@
       ],
       "year": 2023,
       "venue": "Nature Genetics",
-      "abstract": null,
-      "cited_by_count": 401,
+      "abstract": "Predicting the effects of coding variants is a major challenge. While recent deep-learning models have improved variant effect prediction accuracy, they cannot analyze all due to dependency on close homologs or software limitations. Here we developed workflow using ESM1b, 650-million-parameter protein language model, predict ~450 million possible missense in human genome, and made predictions available web portal. ESM1b outperformed existing methods classifying ~150,000 ClinVar/HGMD as pathogenic benign predicting measurements across 28 deep mutational scan datasets. We further annotated ~2 damaging only specific isoforms, demonstrating importance considering isoforms when effects. Our approach also generalizes more complex such in-frame indels stop-gains. Together, these results establish an effective, accurate general",
+      "cited_by_count": 405,
       "is_oa": true,
       "url": "https://openalex.org/W4385737488",
       "pdf_url": "https://www.nature.com/articles/s41588-023-01465-0.pdf",
@@ -328,7 +328,40 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.261012",
-      "updated_at": "2026-03-10T02:19:05.041207"
+      "updated_at": "2026-03-14T09:21:28.676137"
+    },
+    {
+      "id": "https://openalex.org/W4391848979",
+      "doi": "10.1016/j.inffus.2024.102301",
+      "title": "Explainable Artificial Intelligence (XAI) 2.0: A manifesto of open challenges and interdisciplinary research directions",
+      "authors": [
+        "Luca Longo",
+        "Mario Brčić",
+        "Federico Cabitza",
+        "Jaesik Choi",
+        "Roberto Confalonieri",
+        "Javier Del Ser"
+      ],
+      "year": 2024,
+      "venue": "Information Fusion",
+      "abstract": null,
+      "cited_by_count": 391,
+      "is_oa": true,
+      "url": "https://openalex.org/W4391848979",
+      "pdf_url": "https://boa.unimib.it/bitstream/10281/513623/1/Longo-2024-Information%20Fusion-VoR.pdf",
+      "concepts": [
+        "Manifesto",
+        "Computer science",
+        "Open research",
+        "Artificial intelligence",
+        "Data science",
+        "Political science"
+      ],
+      "topic": "Explainable Artificial Intelligence (XAI)",
+      "tags": [],
+      "status": "unread",
+      "added_at": "2026-03-14T09:21:28.678007",
+      "updated_at": "2026-03-14T09:21:28.678007"
     },
     {
       "id": "https://openalex.org/W2938252403",
@@ -358,7 +391,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.263256",
-      "updated_at": "2026-03-10T02:19:05.042947"
+      "updated_at": "2026-03-14T09:21:28.680324"
     },
     {
       "id": "https://openalex.org/W4327672398",
@@ -375,7 +408,7 @@
       "year": 2023,
       "venue": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
       "abstract": "While ChatGPT has recently become very popular, AI a long history and philosophy. This paper intends to explore the promises pitfalls of Generative Pre-trained Transformer (GPT) potentially future technologies by adopting speculative methodology. Speculative narratives with specific focus on educational contexts are provided in an attempt identify emerging themes discuss their implications for education 21st century. Affordances (using) Education (AIEd) possible adverse effects identified discussed which emerge from narratives. It is argued that now best times define human vs contribution because can accomplish more activities used be prerogative educators. Therefore, it imperative rethink respective roles technology educators future-oriented mindset.",
-      "cited_by_count": 317,
+      "cited_by_count": 318,
       "is_oa": true,
       "url": "https://openalex.org/W4327672398",
       "pdf_url": "https://eprints.gla.ac.uk/294292/1/294292.pdf",
@@ -391,7 +424,40 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.265248",
-      "updated_at": "2026-03-10T02:19:05.044585"
+      "updated_at": "2026-03-14T09:21:28.682395"
+    },
+    {
+      "id": "https://openalex.org/W2915854813",
+      "doi": "10.2172/1478744",
+      "title": "Workshop Report on Basic Research Needs for Scientific Machine Learning: Core Technologies for Artificial Intelligence",
+      "authors": [
+        "Nathan Baker",
+        "Frank Alexander",
+        "Peer‐Timo Bremer",
+        "Aric Hagberg",
+        "Yannis Kevrekidis",
+        "Habib N. Najm"
+      ],
+      "year": 2019,
+      "venue": null,
+      "abstract": "Scientific Machine Learning (SciML) and Artificial Intelligence (AI) will have broad use transformative effects across the Department of Energy. Accordingly, January 2018 Basic Research Needs workshop identified six Priority Directions (PRDs). The first three PRDs describe foundational research themes that correspond to need for domain-awareness (PRD #1), interpretability #2), robustness #3). other capability major cases massive scientific data analysis #4), machine learning-enhanced modeling simulation #5), intelligent automation decision-support complex systems #6). provide a sound basis coherent, long-term development strategy in SciML AI. Over last decade, DOE investments applied mathematics laid groundwork type basic underpin key advances PRDs. Such build on work from leading researchers optimization, linear algebra, high-performance solvers algorithms, multiscale simulation, research, uncertainty quantification, new areas emerge pursuit technologies.",
+      "cited_by_count": 285,
+      "is_oa": true,
+      "url": "https://openalex.org/W2915854813",
+      "pdf_url": "https://www.osti.gov/servlets/purl/1478744",
+      "concepts": [
+        "Transformative learning",
+        "Interpretability",
+        "Computer science",
+        "Artificial intelligence",
+        "Automation",
+        "Data science"
+      ],
+      "topic": "Scientific Computing and Data Management",
+      "tags": [],
+      "status": "unread",
+      "added_at": "2026-03-14T09:21:28.684008",
+      "updated_at": "2026-03-14T09:21:28.684008"
     },
     {
       "id": "https://openalex.org/W4390315357",
@@ -408,7 +474,7 @@
       "year": 2023,
       "venue": null,
       "abstract": "Recent advancements in artificial intelligence (AI) and specifically generative AI (GenAI) are threatening to fundamentally reshape computing society. Largely driven by large language models (LLMs), many tools now able interpret generate both natural instructions source code. These capabilities have sparked urgent questions the education community around how educators should adapt their pedagogy address challenges leverage opportunities presented this new technology. In working group report, we undertake a comprehensive exploration of context make five significant contributions. First, provide detailed review literature on LLMs synthesise findings from 71 primary articles, nearly 80% which been published first 8 months 2023. Second, report survey students instructors across 20 countries, capturing prevailing attitudes towards GenAI/LLMs use contexts. Third, understand is already changing, offer insights collected in-depth interviews with 22 continents. Fourth, ACM Code Ethics frame discussion ethical issues raised education, concrete advice for policy makers, educators, students. Finally, benchmark performance several current GenAI models/tools various datasets, highlight extent rapidly improving.",
-      "cited_by_count": 279,
+      "cited_by_count": 280,
       "is_oa": true,
       "url": "https://openalex.org/W4390315357",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3623762.3633499",
@@ -424,7 +490,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.267687",
-      "updated_at": "2026-03-10T02:19:05.046722"
+      "updated_at": "2026-03-14T09:21:28.685723"
     },
     {
       "id": "https://openalex.org/W4308623137",
@@ -436,7 +502,7 @@
       "year": 2022,
       "venue": null,
       "abstract": "Text-guided synthesis of images has made a giant leap towards becoming mainstream phenomenon. With text-to-image generation systems, anybody can create digital and artworks. This provokes the question whether is creative. paper expounds on nature human creativity involved in art (so-called “AI art”) with specific focus practice prompt engineering. The argues that current product-centered view falls short context generation. A case exemplifying this shortcoming provided importance online communities for creative ecosystem highlighted. provides high-level summary drawing Rhodes’ conceptual four P model creativity. Challenges evaluating opportunities research field Human-Computer Interaction (HCI) are discussed.",
-      "cited_by_count": 233,
+      "cited_by_count": 234,
       "is_oa": true,
       "url": "https://openalex.org/W4308623137",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3569219.3569352",
@@ -452,7 +518,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.271238",
-      "updated_at": "2026-03-10T02:19:05.049161"
+      "updated_at": "2026-03-14T09:21:28.687553"
     },
     {
       "id": "https://openalex.org/W3124923885",
@@ -481,7 +547,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.273564",
-      "updated_at": "2026-03-10T02:19:05.051611"
+      "updated_at": "2026-03-14T09:21:28.689298"
     },
     {
       "id": "https://openalex.org/W4386242492",
@@ -498,7 +564,7 @@
       "year": 2023,
       "venue": null,
       "abstract": "The last 3 years have resulted in machine learning (ML)-based image generators with the ability to output consistently higher quality images based on natural language prompts as inputs. As a result, many popular commercial “generative AI Art” products entered market, making generative an estimated $48B industry [125]. However, professional artists spoken up about harms they experienced due proliferation of large scale trained image/text pairs from Internet. In this paper, we review some these which include reputational damage, economic loss, plagiarism and copyright infringement. To guard against issues while reaping potential benefits generators, provide recommendations such regulation that forces organizations disclose their training data, tools help prevent using content data without consent.",
-      "cited_by_count": 208,
+      "cited_by_count": 209,
       "is_oa": true,
       "url": "https://openalex.org/W4386242492",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3600211.3604681",
@@ -514,7 +580,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.276006",
-      "updated_at": "2026-03-10T02:19:05.053279"
+      "updated_at": "2026-03-14T09:21:28.691152"
     },
     {
       "id": "https://openalex.org/W4361206176",
@@ -527,7 +593,7 @@
       "year": 2023,
       "venue": "Review of Managerial Science",
       "abstract": null,
-      "cited_by_count": 191,
+      "cited_by_count": 194,
       "is_oa": true,
       "url": "https://openalex.org/W4361206176",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11846-023-00647-8.pdf",
@@ -543,7 +609,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.278364",
-      "updated_at": "2026-03-10T02:19:05.054708"
+      "updated_at": "2026-03-14T09:21:28.692979"
     },
     {
       "id": "https://openalex.org/W2950398529",
@@ -576,7 +642,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.280849",
-      "updated_at": "2026-03-10T02:19:05.056670"
+      "updated_at": "2026-03-14T09:21:28.694711"
     },
     {
       "id": "https://openalex.org/W4391379655",
@@ -592,7 +658,7 @@
       "year": 2024,
       "venue": "Nature Methods",
       "abstract": "Intrinsically disordered regions (IDRs) are ubiquitous across all domains of life and play a range functional roles. While folded generally well described by stable three-dimensional structure, IDRs exist in collection interconverting states known as an ensemble. This structural heterogeneity means that largely absent from the Protein Data Bank, contributing to lack computational approaches predict ensemble conformational properties sequence. Here we combine rational sequence design, large-scale molecular simulations deep learning develop ALBATROSS, deep-learning model for predicting dimensions IDRs, including radius gyration, end-to-end distance, polymer-scaling exponent asphericity, directly sequences at proteome-wide scale. ALBATROSS is lightweight, easy use accessible both locally installable software package point-and-click-style interface via Google Colab notebooks. We first demonstrate applicability our predictors examining generalizability sequence-ensemble relationships IDRs. Then, leverage high-throughput nature characterize sequence-specific biophysical behavior within between proteomes.",
-      "cited_by_count": 187,
+      "cited_by_count": 189,
       "is_oa": true,
       "url": "https://openalex.org/W4391379655",
       "pdf_url": "https://www.nature.com/articles/s41592-023-02159-5.pdf",
@@ -608,7 +674,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.283619",
-      "updated_at": "2026-03-10T02:19:05.058119"
+      "updated_at": "2026-03-14T09:21:28.697705"
     },
     {
       "id": "https://openalex.org/W4385732922",
@@ -625,7 +691,7 @@
       "year": 2023,
       "venue": "Human-Centric Intelligent Systems",
       "abstract": "Abstract In recent years, artificial intelligence (AI) technology has been used in most if not all domains and greatly benefited our lives. While AI can accurately extract critical features valuable information from large amounts of data to help people complete tasks faster, there are growing concerns about the non-transparency decision-making process. The emergence explainable (XAI) allowed humans better understand control systems, which is motivated provide transparent explanations for decisions made by AI. This article aims present a comprehensive overview research on XAI approaches three well-defined taxonomies. We offer an in-depth analysis summary status prospects applications several key areas where reliable urgently needed avoid mistakes decision-making. conclude discussing XAI’s limitations future directions.",
-      "cited_by_count": 174,
+      "cited_by_count": 175,
       "is_oa": true,
       "url": "https://openalex.org/W4385732922",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44230-023-00038-y.pdf",
@@ -641,7 +707,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.286011",
-      "updated_at": "2026-03-10T02:19:05.059776"
+      "updated_at": "2026-03-14T09:21:28.699645"
     },
     {
       "id": "https://openalex.org/W4390970201",
@@ -658,7 +724,7 @@
       "year": 2024,
       "venue": "IEEE Access",
       "abstract": "Given the continually rising frequency of cyberattacks, adoption artificial intelligence methods, particularly Machine Learning (ML), Deep (DL), and Reinforcement (RL), has become essential in realm cybersecurity. These techniques have proven to be effective detecting mitigating which can cause significant harm individuals, organizations, even countries. learning algorithms use statistical methods identify patterns anomalies large datasets, enabling security analysts detect previously unknown threats. learning, a subfield ML, shown great potential improving accuracy efficiency cybersecurity systems, image speech recognition. On other hand, RL is again machine that trains learn through trial error, making it dynamic environments. We also evaluated usage ChatGPT-like AI tools cyber-related problem domains on both sides, positive negative. This article provides an overview how DL, are applied cybersecurity, including their malware detection, intrusion vulnerability assessment, areas. The state-of-the-art studies using models each section based main idea, techniques, important findings. It discusses these techniques’ challenges limitations, data quality, interpretability, adversarial attacks. Overall, holds promise for effectiveness systems enhancing our ability protect against cyberattacks. However, continue developing refining address ever-evolving nature cyber Besides, some promising solutions rely deep reinforcement susceptible attacks, underscoring importance factoring this when devising countermeasures sophisticated concluded ChatGPT valuable tool but should noted manipulated threaten integrity, confidentiality, availability data.",
-      "cited_by_count": 164,
+      "cited_by_count": 165,
       "is_oa": true,
       "url": "https://openalex.org/W4390970201",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10403908.pdf",
@@ -674,7 +740,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.288341",
-      "updated_at": "2026-03-10T02:19:05.061851"
+      "updated_at": "2026-03-14T09:21:28.701821"
     },
     {
       "id": "https://openalex.org/W3135166915",
@@ -707,7 +773,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.290461",
-      "updated_at": "2026-03-10T02:19:05.064271"
+      "updated_at": "2026-03-14T09:21:28.703770"
     },
     {
       "id": "https://openalex.org/W3043949589",
@@ -735,7 +801,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.293239",
-      "updated_at": "2026-03-10T02:19:05.067064"
+      "updated_at": "2026-03-14T09:21:28.705607"
     },
     {
       "id": "https://openalex.org/W2779367312",
@@ -768,7 +834,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.296072",
-      "updated_at": "2026-03-10T02:19:05.070079"
+      "updated_at": "2026-03-14T09:21:28.707671"
     },
     {
       "id": "https://openalex.org/W4391542588",
@@ -785,7 +851,7 @@
       "year": 2024,
       "venue": "Nature Communications",
       "abstract": "While significant advances have been made in predicting static protein structures, the inherent dynamics of proteins, modulated by ligands, are crucial for understanding function and facilitating drug discovery. Traditional docking methods, frequently used studying protein-ligand interactions, typically treat proteins as rigid. molecular simulations can propose appropriate conformations, they're computationally demanding due to rare transitions between biologically relevant equilibrium states. In this study, we present DynamicBind, a deep learning method that employs equivariant geometric diffusion networks construct smooth energy landscape, promoting efficient different DynamicBind accurately recovers ligand-specific conformations from unbound structures without need holo-structures or extensive sampling. Remarkably, it demonstrates state-of-the-art performance virtual screening benchmarks. Our experiments reveal accommodate wide range large conformational changes identify cryptic pockets unseen targets. As result, shows potential accelerating development small molecules previously undruggable targets expanding horizons computational",
-      "cited_by_count": 144,
+      "cited_by_count": 145,
       "is_oa": true,
       "url": "https://openalex.org/W4391542588",
       "pdf_url": "https://www.nature.com/articles/s41467-024-45461-2.pdf",
@@ -801,7 +867,72 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.298139",
-      "updated_at": "2026-03-10T02:19:05.071675"
+      "updated_at": "2026-03-14T09:21:28.711516"
+    },
+    {
+      "id": "https://openalex.org/W4402273478",
+      "doi": "10.1038/s41467-024-52061-7",
+      "title": "An artificial intelligence accelerated virtual screening platform for drug discovery",
+      "authors": [
+        "Guangfeng Zhou",
+        "Domnița-Valeria Rusnac",
+        "Hahnbeom Park",
+        "Daniele Canzani",
+        "Hai M. Nguyen",
+        "Lance Stewart"
+      ],
+      "year": 2024,
+      "venue": "Nature Communications",
+      "abstract": null,
+      "cited_by_count": 145,
+      "is_oa": true,
+      "url": "https://openalex.org/W4402273478",
+      "pdf_url": "https://www.nature.com/articles/s41467-024-52061-7.pdf",
+      "concepts": [
+        "Virtual screening",
+        "Drug discovery",
+        "Binding affinities",
+        "Docking (animal)",
+        "Computer science",
+        "Computational biology"
+      ],
+      "topic": "Computational Drug Discovery Methods",
+      "tags": [],
+      "status": "unread",
+      "added_at": "2026-03-14T09:21:28.709397",
+      "updated_at": "2026-03-14T09:21:28.709397"
+    },
+    {
+      "id": "https://openalex.org/W4391256306",
+      "doi": "10.1007/s10639-023-12405-0",
+      "title": "How should we change teaching and assessment in response to increasingly powerful generative Artificial Intelligence? Outcomes of the ChatGPT teacher survey",
+      "authors": [
+        "Matt Bower",
+        "Jodie Torrington",
+        "Jennifer W. M. Lai",
+        "Peter Petocz",
+        "Mark Alfano"
+      ],
+      "year": 2024,
+      "venue": "Education and Information Technologies",
+      "abstract": "Abstract There has been widespread media commentary about the potential impact of generative Artificial Intelligence (AI) such as ChatGPT on Education field, but little examination at scale how educators believe teaching and assessment should change a result AI. This mixed methods study examines views ( n = 318) from diverse range levels, experience discipline areas, regions AI assessment, ways that they change, key motivations for changing their practices. The majority teachers felt would have major or profound though sizeable minority it no impact. Teaching level, experience, area, region, gender all significantly influenced perceived assessment. Higher levels awareness predicted higher impact, pointing to possibility an ‘ignorance effect’. Thematic analysis revealed specific curriculum, pedagogy, changes feel are needed AI, which centre around learning with higher-order thinking, ethical values, focus processes face-to-face relational learning. Teachers were most motivated practices increase performance expectancy students themselves. We conclude by discussing implications these findings in world increasingly prevalent",
+      "cited_by_count": 139,
+      "is_oa": true,
+      "url": "https://openalex.org/W4391256306",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-023-12405-0.pdf",
+      "concepts": [
+        "Generative grammar",
+        "Curriculum",
+        "Psychology",
+        "Ignorance",
+        "Teaching method",
+        "Generative model"
+      ],
+      "topic": "Artificial Intelligence in Healthcare and Education",
+      "tags": [],
+      "status": "unread",
+      "added_at": "2026-03-10T01:43:55.302375",
+      "updated_at": "2026-03-14T09:21:28.713801"
     },
     {
       "id": "https://openalex.org/W2969940513",
@@ -830,39 +961,7 @@
       "tags": [],
       "status": "unread",
       "added_at": "2026-03-10T01:43:55.300304",
-      "updated_at": "2026-03-10T02:19:05.073621"
-    },
-    {
-      "id": "https://openalex.org/W4391256306",
-      "doi": "10.1007/s10639-023-12405-0",
-      "title": "How should we change teaching and assessment in response to increasingly powerful generative Artificial Intelligence? Outcomes of the ChatGPT teacher survey",
-      "authors": [
-        "Matt Bower",
-        "Jodie Torrington",
-        "Jennifer W. M. Lai",
-        "Peter Petocz",
-        "Mark Alfano"
-      ],
-      "year": 2024,
-      "venue": "Education and Information Technologies",
-      "abstract": "Abstract There has been widespread media commentary about the potential impact of generative Artificial Intelligence (AI) such as ChatGPT on Education field, but little examination at scale how educators believe teaching and assessment should change a result AI. This mixed methods study examines views ( n = 318) from diverse range levels, experience discipline areas, regions AI assessment, ways that they change, key motivations for changing their practices. The majority teachers felt would have major or profound though sizeable minority it no impact. Teaching level, experience, area, region, gender all significantly influenced perceived assessment. Higher levels awareness predicted higher impact, pointing to possibility an ‘ignorance effect’. Thematic analysis revealed specific curriculum, pedagogy, changes feel are needed AI, which centre around learning with higher-order thinking, ethical values, focus processes face-to-face relational learning. Teachers were most motivated practices increase performance expectancy students themselves. We conclude by discussing implications these findings in world increasingly prevalent",
-      "cited_by_count": 137,
-      "is_oa": true,
-      "url": "https://openalex.org/W4391256306",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10639-023-12405-0.pdf",
-      "concepts": [
-        "Generative grammar",
-        "Curriculum",
-        "Psychology",
-        "Ignorance",
-        "Teaching method",
-        "Generative model"
-      ],
-      "topic": "Artificial Intelligence in Healthcare and Education",
-      "tags": [],
-      "status": "unread",
-      "added_at": "2026-03-10T01:43:55.302375",
-      "updated_at": "2026-03-10T02:19:05.075026"
+      "updated_at": "2026-03-14T09:21:28.715562"
     },
     {
       "id": "https://openalex.org/W4388361755",

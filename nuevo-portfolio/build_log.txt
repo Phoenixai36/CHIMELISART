@@ -6,7 +6,7 @@
 [2m14:00:21[22m [34m[types][39m Generated [2m28ms[22m
 [2m14:00:21[22m [34m[build][39m output: [34m"static"[39m
 [2m14:00:21[22m [34m[build][39m mode: [34m"server"[39m
-[2m14:00:21[22m [34m[build][39m directory: [34mD:\AGENTS\CHIMELISART\nuevo-portfolio\dist\[39m
+[2m14:00:21[22m [34m[build][39m directory: [34mK:\AGENTS\CHIMELISART\nuevo-portfolio\dist\[39m
 [2m14:00:21[22m [34m[build][39m adapter: [32m@astrojs/cloudflare[39m
 [2m14:00:21[22m [34m[build][39m Collecting build info...
 [2m14:00:21[22m [34m[build][39m [32mÔ£ô Completed in 71ms.[39m
@@ -28,9 +28,9 @@
 [2m14:00:23[22m [32mÔûÂ[39m src/pages/artist.astro
 Navbar is not defined
   Stack trace:
-    at file:///D:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/Layout_DwJSxbyb.mjs:16:1497
-    at AstroComponentInstance.init (file:///D:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:5834:29)
-    at Object.render (file:///D:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:6472:23)
-    at file:///D:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:5318:18
-    at createBufferedRenderer (file:///D:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:1088:10)
+    at file:///K:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/Layout_DwJSxbyb.mjs:16:1497
+    at AstroComponentInstance.init (file:///K:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:5834:29)
+    at Object.render (file:///K:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:6472:23)
+    at file:///K:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:5318:18
+    at createBufferedRenderer (file:///K:/AGENTS/CHIMELISART/nuevo-portfolio/dist/_worker.js/chunks/astro/server_C4pnj-ck.mjs:1088:10)
 [2m14:00:23[22m   [34mÔööÔöÇ[39m [2m/artist/index.html[22m

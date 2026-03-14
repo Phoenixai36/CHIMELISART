@@ -1,0 +1,61 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "provider": {
+    "zhipuai": {
+      "api": "https://api.z.ai/api/coding/paas/v4"
+    }
+  },
+  "lsp": {
+    "python": {
+      "enabled": true,
+      "server": "pylance"
+    },
+    "typescript": {
+      "enabled": true,
+      "server": "typescript-language-server"
+    },
+    "json": {
+      "enabled": true,
+      "server": "vscode-json-languageserver"
+    },
+    "yaml": {
+      "enabled": true,
+      "server": "yaml-language-server"
+    }
+  },
+  "providers": {
+    "zai": {
+      "api_key": "71add157b3bd4acba5c11e3341f77c53.X9vRT9bgTP1lCPP9"
+    }
+  },
+  "models": {
+    "large": {
+      "model": "glm-4.5",
+      "provider": "zai",
+      "max_tokens": 98304
+    }
+  },
+  "mcp": {
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "timeout": 60,
+      "disabled": false
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"],
+      "timeout": 60,
+      "disabled": false
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "timeout": 60,
+      "disabled": false
+    }
+  }
+}
