@@ -1,0 +1,7 @@
+
+*.exe
+.dolt/
+.reviews/
+UNIVERSALPROMPT.md
+__pycache__/
+*.pyc
