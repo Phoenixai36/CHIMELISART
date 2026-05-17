@@ -5,3 +5,5 @@
 UNIVERSALPROMPT.md
 __pycache__/
 *.pyc
+
+hooks/
