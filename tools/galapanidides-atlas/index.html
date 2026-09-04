@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galapanídides — Atlas</title>
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#eee;background:#111}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 0,#29261f,#111 55%);min-height:100vh}
+    header{padding:28px 32px;border-bottom:1px solid #444} h1{margin:0 0 6px;font-weight:500;letter-spacing:.04em} header p{margin:0;color:#aaa}
+    main{display:grid;grid-template-columns:280px 1fr;gap:0;min-height:calc(100vh - 100px)}
+    aside{padding:24px;border-right:1px solid #444} button,input{font:inherit} button{display:block;width:100%;padding:10px;margin:6px 0;text-align:left;background:#1d1d1d;color:#ddd;border:1px solid #444;border-radius:8px;cursor:pointer} button:hover{background:#292929}
+    input{width:100%;padding:11px;background:#181818;color:#eee;border:1px solid #444;border-radius:8px;margin-bottom:14px}
+    section{padding:28px;max-width:1100px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card{padding:18px;background:rgba(25,25,25,.86);border:1px solid #444;border-radius:12px}.type{font-size:.72rem;letter-spacing:.12em;color:#aaa;text-transform:uppercase}.card h2{font-size:1.05rem;margin:8px 0}.card p{line-height:1.55;color:#ccc}.tag{display:inline-block;margin:3px 4px 0 0;padding:3px 7px;border-radius:999px;border:1px solid #555;color:#aaa;font-size:.72rem}.warning{border-left:3px solid #aaa;padding:12px 14px;background:#191919;color:#bbb;margin-bottom:18px}.count{color:#999;font-size:.9rem}
+    @media(max-width:760px){main{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid #444}}
+  </style>
+</head>
+<body>
+<header><h1>GALAPANÍDIDES / ATLAS</h1><p>Corpus de la edición física · evidencia antes que interpretación</p></header>
+<main>
+<aside>
+  <input id="q" placeholder="Buscar entidad, lugar, concepto…" autocomplete="off">
+  <button data-filter="ALL">Todo</button>
+  <button data-filter="LORE">Lore</button>
+  <button data-filter="FIGURE">Figuras</button>
+  <button data-filter="PLACE">Lugares</button>
+  <button data-filter="MECHANIC">Mecánicas derivadas</button>
+  <button data-filter="EVIDENCE">Evidencia</button>
+  <p class="count" id="count"></p>
+</aside>
+<section>
+  <div class="warning"><strong>Estado epistemológico:</strong> el material procede de los vídeos de las páginas del libro físico. Las afirmaciones sobre COVID-19, ovnis y acontecimientos reales son elementos de la narrativa y no deben presentarse como hechos históricos o científicos.</div>
+  <div id="grid" class="grid"></div>
+</section>
+</main>
+<script>
+const records=[
+ {t:'LORE',n:'Civilización Galapanídides',p:'Civilización extremadamente avanzada situada en un lugar remoto del universo. Sus seres pueden descomponer y recomponer sus células y desplazarlas al pasado, presente o futuro.',tags:['células','tiempo','universos paralelos']},
+ {t:'LORE',n:'Planeta Galapanídides',p:'Planeta de origen cuyos habitantes son prácticamente inmortales y vivían en armonía hasta el ataque de la Matèria Fosca.',tags:['origen','inmortalidad']},
+ {t:'FIGURE',n:'Matèria Fosca',p:'Enemigo destructivo que aniquila y arrasa. Sus guerreros pueden adoptar apariencia humana.',tags:['antagonista','infiltración']},
+ {t:'FIGURE',n:'Galapanídides supervivientes',p:'Un grupo sobrevive al ataque y decide abandonar su planeta. Fusionan sus mentes en una entidad única durante el éxodo.',tags:['mente fusionada','supervivientes']},
+ {t:'MECHANIC',n:'Fusión mental',p:'Regla canónica con potencial de convertirse en sistema: varias mentes pueden funcionar como una entidad.',tags:['identidad','cooperación']},
+ {t:'MECHANIC',n:'Recomposición morfológica',p:'La capacidad celular de cambiar de forma y tamaño permite diseñar estados de embodiment distintos.',tags:['transformación','escala']},
+ {t:'MECHANIC',n:'Red de portales',p:'Los portales conectan mundos y realidades, pero pueden ser destruidos o quedar reducidos a rutas muy limitadas.',tags:['portales','realidades']},
+ {t:'PLACE',n:'Tossa de Mar / Costa Brava',p:'El texto fotografiado sitúa una nave Galapanídides enterrada en un pequeño lugar identificado como Tossa de Mar, asociado a una gran muralla medieval.',tags:['Tossa de Mar','Catalunya','nave enterrada']},
+ {t:'LORE',n:'Rastrejadors',p:'Grupos creados por los Galapanídides capaces de cambiar de forma y tamaño. Entran en la atmósfera terrestre y examinan cambios en ambos mundos.',tags:['exploración','atmósfera']},
+ {t:'LORE',n:'Infiltración humana',p:'Algunos guerreros de la Matèria Fosca adoptan apariencia humana e infiltran esferas de poder como bancos, judicatura y política.',tags:['identidad','instituciones']},
+ {t:'PLACE',n:'Mundo humano / Tierra',p:'La capa cotidiana de la humanidad permanece aparentemente normal mientras el conflicto dimensional ocurre fuera de su percepción.',tags:['Tierra','doble capa']},
+ {t:'MECHANIC',n:'Realidades paralelas',p:'La tecnología permite atravesar universos y mundos paralelos. Una localización puede tener estados correspondientes en realidades distintas.',tags:['dimensión','navegación']},
+ {t:'LORE',n:'Asimetría de acceso',p:'Los Galapanídides pueden quedar atrapados en otro universo mientras la Matèria Fosca conserva acceso a la humanidad.',tags:['estrategia','portal']},
+ {t:'EVIDENCE',n:'Corpus de cinco vídeos',p:'Los vídeos muestran páginas de texto e ilustraciones de la edición física a lápiz. El texto se está reconstruyendo por fotogramas nítidos y verificación visual.',tags:['fuente primaria','vídeo']}
+];
+let filter='ALL';
+const grid=document.querySelector('#grid'),q=document.querySelector('#q'),count=document.querySelector('#count');
+function render(){const s=q.value.toLowerCase();const out=records.filter(r=>(filter==='ALL'||r.t===filter)&&(r.n+' '+r.p+' '+r.tags.join(' ')).toLowerCase().includes(s));count.textContent=`${out.length} registros`;grid.innerHTML=out.map(r=>`<article class="card"><div class="type">${r.t}</div><h2>${r.n}</h2><p>${r.p}</p><div>${r.tags.map(x=>`<span class="tag">${x}</span>`).join('')}</div></article>`).join('')}
+document.querySelectorAll('button').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;render()});q.oninput=render;render();
+</script>
+</body>
+</html>
